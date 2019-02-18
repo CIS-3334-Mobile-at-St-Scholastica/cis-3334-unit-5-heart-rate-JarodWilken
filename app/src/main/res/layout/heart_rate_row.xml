@@ -5,11 +5,19 @@
     android:orientation="horizontal">
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Pulse: " />
+        android:text="Pulse: "
+        android:textColor="@color/colorZone" />
 
     <TextView
         android:id="@+id/textViewPulse"
