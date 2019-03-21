@@ -44,11 +44,15 @@ public class HeartRateAdapter extends ArrayAdapter<HeartRate> {
 
         TextView tvPulse=(TextView)view.findViewById(R.id.textViewPulse);
         tvPulse.setText(hr.getPulse().toString());
-        if ( true){
+
+        if (hr.getRangeName().equals("Resting")) {
             tvPulse.setTextColor(ContextCompat.getColor(context, R.color.colorZone));
+        } else if (hr.getRangeName().equals("Moderate")) {
+            tvPulse.setTextColor(ContextCompat.getColor(context, R.color.colorAccent));
         }
+        // Add more checks on range here.
 
-
-        return(view);
+        
+            return(view);
     }
 }
